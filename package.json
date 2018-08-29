@@ -1,0 +1,24 @@
+{
+  "name": "recipefinder",
+  "version": "1.0.0",
+  "description": "This package will use the Recipe Puppy API to retrieve recipes and return { name, url, numberOfIngredients }",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test"
+  },
+  "keywords": [
+    "Recipes"
+  ],
+  "author": "Quincy Obeng",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "4.1.2",
+    "express": "4.16.3",
+    "mocha": "5.2.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.2",
+    "rewire": "4.0.1",
+    "url-exists-deep": "1.1.1"
+  }
+}

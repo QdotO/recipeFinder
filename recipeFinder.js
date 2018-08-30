@@ -10,5 +10,8 @@ module.exports = (request) => {
         then(makeQuery).
         then(requestRecipes).
         then(validateRecipeLinks).
-        then(findRecipeWMostIngredients);
+        then(findRecipeWMostIngredients).
+        catch(error => {
+            console.log('Error getting recipes: ', error);
+        });
 };

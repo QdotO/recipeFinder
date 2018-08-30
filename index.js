@@ -8,7 +8,4 @@ const finder = require('./recipeFinder.js');
             q: 'lasagna'
         }
     };
-   return finder(req).then(response => {
-        console.log('Returning: ',response);
-        return response;
-   });
+   return finder(req);

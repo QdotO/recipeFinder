@@ -13,12 +13,26 @@
   "author": "Quincy Obeng",
   "license": "ISC",
   "dependencies": {
+    "request": "2.88.0",
+    "request-promise": "4.2.2",
+    "url-exists-deep": "1.1.1",
+    "decode-html": "2.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
     "chai": "4.1.2",
     "express": "4.16.3",
     "mocha": "5.2.0",
-    "request": "2.88.0",
-    "request-promise": "4.2.2",
-    "rewire": "4.0.1",
-    "url-exists-deep": "1.1.1"
-  }
+    "rewire": "4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QdotO/recipeFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QdotO/recipeFinder/issues"
+  },
+  "homepage": "https://github.com/QdotO/recipeFinder#readme"
 }

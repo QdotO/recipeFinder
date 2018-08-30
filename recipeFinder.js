@@ -12,6 +12,6 @@ module.exports = (request) => {
         then(validateRecipeLinks).
         then(findRecipeWMostIngredients).
         catch(error => {
-            console.log('Error getting recipes: ', error);
+            console.log('Error getting recipes: ' +  JSON.stringify(error, null, 2));
         });
 };

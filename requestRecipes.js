@@ -11,7 +11,6 @@ module.exports = (endpoint) => {
     };
 
     return rp(options).then(response => {
-        // console.log('Recipe Puppy responded with: ' + JSON.stringify(response, null, 2) + '\n');
         return response.results;
     });
 };

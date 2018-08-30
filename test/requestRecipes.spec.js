@@ -8,10 +8,12 @@ describe('requestRecipes', () => {
         console.log('Options: ', options);
         if (options && options.method == 'GET' && options.uri == url + 'i=lasagna') {
             return Promise.resolve({
-                title: 'Pasta al pesto',
-                href: 'http://www.bigoven.com/167977-Pasta-al-pesto-recipe.html',
-                ingredients: 'pesto',
-                thumbnail: 'http://img.recipepuppy.com/565185.jpg'
+                results: {
+                    title: 'Pasta al pesto',
+                    href: 'http://www.bigoven.com/167977-Pasta-al-pesto-recipe.html',
+                    ingredients: 'pesto',
+                    thumbnail: 'http://img.recipepuppy.com/565185.jpg'
+                }
             });
         } else {
             return Promise.reject({
@@ -39,7 +41,7 @@ describe('requestRecipes', () => {
             expect(result).to.be.null;
         }).catch(error => {
             expect(error).to.be.deep.equal({
-                errorMessage:'invalid request'
+                errorMessage: 'invalid request'
             });
         });
     });

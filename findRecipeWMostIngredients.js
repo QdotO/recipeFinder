@@ -2,6 +2,10 @@
 const decode = require('decode-html');
 
 module.exports = (verifiedRecipes) => {
+    if(typeof verifiedRecipes == 'undefined'){
+        return Promise.reject('verifiedRecipes is undefined');
+    }
+    
     var mostIngredientsCount = 0;
     var filteredRecipe = {};
     verifiedRecipes.forEach(recipe => {
